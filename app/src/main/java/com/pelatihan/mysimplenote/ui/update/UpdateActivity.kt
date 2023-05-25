@@ -65,7 +65,7 @@ class UpdateActivity : AppCompatActivity() {
 
         binding.btnSubmit.text = btnTitle
         binding.btnSubmit.setOnClickListener {
-            val title = binding.edtTitle.text.toString().trim()
+            val title = binding.edtTitle.text.toString().trim() // untuk mendapatkan inputan
             val description = binding.edtDescription.text.toString().trim()
 
             when {

@@ -22,7 +22,7 @@ class HomeActivity : AppCompatActivity() {
         setContentView(binding.root)
 
         val mainViewModel = getViewModel(this@HomeActivity)
-        mainViewModel.getAllNotes().observe(this) { noteList ->
+        mainViewModel.getAllNotes().observe(this) { noteList -> // untuk mendapatkan data dari database
             if (noteList != null) {
                 adapter.setListNotes(noteList)
             }
